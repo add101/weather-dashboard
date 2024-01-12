@@ -1,0 +1,21 @@
+.col-md-2 {
+    background-color: #2d3e50 !important;
+    color: red;
+    margin: 5px;
+    color: white;
+}
+
+
+#search-button {
+    background-color: rgb(210, 210, 231);
+    width: 100%;
+}
+
+#search-input {
+    width: 100%;
+  
+}
+
+#input-group-append {
+    width: 100%;
+}
