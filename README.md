@@ -7,7 +7,7 @@ Weather Dashboard using Openweathermap Server API to display weather information
 
 ## Link to Deployed Site:
 
-https://add101.github.io/Bootstrap-Portfolio/
+[https://add101.github.io/Bootstrap-Portfolio/](https://add101.github.io/weather-dashboard/)
 
 ## Screenshot:
 
