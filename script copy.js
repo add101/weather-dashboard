@@ -32,9 +32,9 @@ $(document).ready(function () {
 
   // Function to fetch weather data for a given city
   function getWeatherData(city) {
-    // API Key
+    // Replace 'YOUR_API_KEY' with your OpenWeatherMap API key
     const apiKey = '0e17fb46da61112a947dc2887ef7ad6b';
-    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
 
     // Make an AJAX request to get weather data
     $.ajax({
@@ -46,15 +46,13 @@ $(document).ready(function () {
     });
   }
 
-  // ... (existing code)
-  
   // Function to update the weather information on the page
   function updateWeatherInfo(weatherData) {
     // Extract relevant information from the response data
     const cityName = weatherData.city.name;
     const currentDate = dayjs().format('MMMM D, YYYY');
     const iconCode = weatherData.list[0].weather[0].icon;
-    const temperature = weatherData.list[0].main.temp.toFixed(2); // Temperature is already in Celsius
+    const temperature = weatherData.list[0].main.temp;
     const humidity = weatherData.list[0].main.humidity;
     const windSpeed = weatherData.list[0].wind.speed;
 
@@ -73,7 +71,7 @@ $(document).ready(function () {
       <div class="col-md-2">
         <h5>${dayjs(item.dt_txt).format('MMMM D')}</h5>
         <img src="https://openweathermap.org/img/w/${item.weather[0].icon}.png" alt="Weather Icon">
-        <p>Temperature: ${item.main.temp.toFixed(2)}°C</p>
+        <p>Temperature: ${item.main.temp}°C</p>
         <p>Humidity: ${item.main.humidity}%</p>
       </div>
     `).join('');
@@ -81,3 +79,4 @@ $(document).ready(function () {
     $('#forecast').html(forecastHtml);
   }
 });
+

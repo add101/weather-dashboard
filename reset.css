@@ -19,3 +19,13 @@
 #input-group-append {
     width: 100%;
 }
+
+/* Adjust the width of the search input to 100% */
+#search-input {
+    width: 100%;
+  }
+  
+  /* Ensure the form takes up full width, if necessary */
+  #search-form {
+    width: 100%;
+  }
