@@ -11,5 +11,5 @@ Weather Dashboard using Openweathermap Server API to display weather information
 
 ## Screenshot:
 
-![my screenshot](images/CSS_Portfolio-Screenshot.jpg)
+![my screenshot](Weather Dashboard.jpg)
 
